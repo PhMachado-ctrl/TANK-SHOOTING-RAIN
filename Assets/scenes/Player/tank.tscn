@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbbiwd5ngoakk"]
+[gd_scene load_steps=4 format=3 uid="uid://cbbiwd5ngoakk"]
 
+[ext_resource type="Script" path="res://Assets/Scripts/tank.gd" id="1_kscte"]
 [ext_resource type="Texture2D" uid="uid://c0ndbce1ysget" path="res://icon.svg" id="1_ye1bg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_avkc7"]
 size = Vector2(87, 85)
 
 [node name="Tank" type="CharacterBody2D"]
+script = ExtResource("1_kscte")
+max_speed = 250.0
+acceleration = 50.0
+friction = 250.0
 
 [node name="Sprite" type="Sprite2D" parent="."]
 scale = Vector2(0.68, 0.68)
