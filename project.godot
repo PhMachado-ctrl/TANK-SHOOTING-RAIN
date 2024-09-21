@@ -14,6 +14,12 @@ config/name="Worms Rain"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=450
+window/size/viewport_height=620
+window/size/initial_position=Vector2i(1152, 648)
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
